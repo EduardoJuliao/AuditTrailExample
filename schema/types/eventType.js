@@ -1,15 +1,16 @@
-const graphql = require('graphql');
-const graphqlDate = require('graphql-iso-date');
-
 const {
    GraphQLObjectType,
    GraphQLString,
    GraphQLID
-} = graphql;
+} = require('graphql');
 
 const {
    GraphQLDateTime
-} = graphqlDate;
+} = require('graphql-iso-date');
+
+const {
+   GraphQLJSONObject
+} = require('graphql-type-json')
 
 module.exports = new GraphQLObjectType({
    name: 'Event',
@@ -22,6 +23,9 @@ module.exports = new GraphQLObjectType({
       },
       date: {
          type: GraphQLDateTime
+      },
+      obj: {
+         type: GraphQLJSONObject
       }
    })
 });

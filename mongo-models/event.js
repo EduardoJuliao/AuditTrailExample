@@ -3,7 +3,8 @@ const Schema = mongo.Schema;
 
 const eventSchema = new Schema({
    date: Date,
-   name: String
+   name: String,
+   obj: JSON
 });
 
 module.exports = mongo.model('Event', eventSchema);

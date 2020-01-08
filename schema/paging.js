@@ -1,10 +1,8 @@
-const graphql = require('graphql');
-
 const {
    GraphQLNonNull,
    GraphQLObjectType,
    GraphQLBoolean
-} = graphql;
+} = require('graphql');
 
 module.exports = new GraphQLObjectType({
    name: 'PageInfo',

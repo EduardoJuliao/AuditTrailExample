@@ -1,16 +1,13 @@
-const graphql = require('graphql');
-const graphqlMongo = require('graphql-to-mongodb');
-
 const {
    GraphQLObjectType,
    GraphQLID,
    GraphQLList,
-} = graphql;
+} = require('graphql');
 
 const {
    getMongoDbQueryResolver,
    getGraphQLQueryArgs
-} = graphqlMongo
+} = require('graphql-to-mongodb')
 
 
 const Event = require('../mongo-models/event');

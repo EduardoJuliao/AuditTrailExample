@@ -77,7 +77,7 @@ query{
 }
 ```
 
-#### Types of sort
+#### Types of sorte
 
 | Symbol | Description      |
 | ------ | ---------------- |
